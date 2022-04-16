@@ -1,0 +1,9 @@
+{
+  "addAlbumForm": {
+    "name": "Nazwa",
+    "addAlbum": "Dodaj album",
+    "requiredError": "Pole jest wymagane!",
+    "minLengthError": "Nazwa albumu powinna zawierać przynajmniej 2 znaki!",
+    "maxLengthError": "Nazwa albumu powinna zawierać maksymalnie 2 znaki!"
+  }
+}

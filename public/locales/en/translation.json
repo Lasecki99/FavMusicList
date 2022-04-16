@@ -1,0 +1,9 @@
+{
+  "addAlbumForm": {
+    "name": "Name",
+    "addAlbum": "Add album",
+    "requiredError": "Field is required!",
+    "minLengthError": "Album name should contains at least 2 characters!",
+    "maxLengthError": "Album name should contains maximum 50 characters!"
+  }
+}
