@@ -5,5 +5,14 @@
     "requiredError": "Pole jest wymagane!",
     "minLengthError": "Nazwa albumu powinna zawierać przynajmniej 2 znaki!",
     "maxLengthError": "Nazwa albumu powinna zawierać maksymalnie 2 znaki!"
+  },
+  "sort": {
+    "sort": "Sortuj",
+    "sortBy": "Sortuj po",
+    "sortType": "Typ sortowania",
+    "createdAt": "Data dodania"
+  },
+  "list": {
+    "viewType": "Rodzaj wyświetlania"
   }
 }

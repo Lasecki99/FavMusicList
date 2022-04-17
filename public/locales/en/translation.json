@@ -5,5 +5,14 @@
     "requiredError": "Field is required!",
     "minLengthError": "Album name should contains at least 2 characters!",
     "maxLengthError": "Album name should contains maximum 50 characters!"
+  },
+  "sort": {
+    "sort": "Sort",
+    "sortBy": "Sort by",
+    "sortType": "Sort type",
+    "createdAt": "Creation date"
+  },
+  "list": {
+    "viewType": "View type"
   }
 }

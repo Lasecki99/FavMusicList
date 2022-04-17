@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Typography, AppBar, Toolbar, IconButton, Drawer } from "@mui/material";
+import {
+  Typography,
+  AppBar,
+  Toolbar,
+  IconButton,
+  Drawer,
+  useMediaQuery,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@emotion/react";
 
@@ -12,6 +19,7 @@ const transition = "cubic-bezier(0, 0, 0.2, 1) .225s";
 const Layout = ({ children, drawerContent }) => {
   const [isNavbarOpen, setNavbarOpen] = useState(true);
   const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <>
@@ -45,20 +53,26 @@ const Layout = ({ children, drawerContent }) => {
         elevation={1}
         open={isNavbarOpen}
         sx={{
-          width: drawerWidth,
+          width: matches ? "100%" : drawerWidth,
           ".MuiDrawer-paper": {
-            width: drawerWidth,
+            width: matches ? "100%" : drawerWidth,
           },
         }}
       >
         <Toolbar />
-        <div style={{ padding: "1rem", margin: "0 auto" }}>
+        <div
+          style={{
+            padding: "1rem",
+            margin: "0 auto",
+            ...(!matches ? { width: 350 } : { width: 300 }),
+          }}
+        >
           {drawerContent()}
         </div>
       </Drawer>
       <main
         style={
-          isNavbarOpen
+          isNavbarOpen && !matches
             ? {
                 marginLeft: drawerWidth,
                 transition,
