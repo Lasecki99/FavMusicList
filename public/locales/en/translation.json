@@ -4,7 +4,8 @@
     "addAlbum": "Add album",
     "requiredError": "Field is required!",
     "minLengthError": "Album name should contains at least 2 characters!",
-    "maxLengthError": "Album name should contains maximum 50 characters!"
+    "maxLengthError": "Album name should contains maximum 50 characters!",
+    "addedSuccessfully": "Album {{name}} has been added successfully!"
   },
   "sort": {
     "sort": "Sort",
@@ -13,6 +14,14 @@
     "createdAt": "Creation date"
   },
   "list": {
-    "viewType": "View type"
+    "viewType": "View type",
+    "setAsFavorite": "Set as best of the best",
+    "removeFromFavorite": "Remove from best of the best",
+    "areYouSure": "Are you sure?",
+    "deleteConfirmation": "Please confirm that you want to delete <0>\"{{name}}\"</0> album",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "emptyList": "Your album list is empty",
+    "createdAt": "Added: {{val, datetime}}"
   }
 }

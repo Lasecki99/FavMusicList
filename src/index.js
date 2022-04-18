@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import "./index.css";
 import App from "./App";
@@ -31,6 +33,7 @@ root.render(
     <ThemeProvider theme={theme}>
       <Provider store={store}>
         <App />
+        <ToastContainer />
       </Provider>
     </ThemeProvider>
   </React.StrictMode>

@@ -7,3 +7,7 @@
 body {
   background-color: rgb(245, 245, 245);
 }
+
+:root {
+  --toastify-color-success: #1ed760;
+}

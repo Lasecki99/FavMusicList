@@ -4,6 +4,7 @@ import { Controller, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { addAlbum } from "../../../app/slices/albumSlice";
+import { toast } from "react-toastify";
 
 const AlbumForm = () => {
   const {
@@ -14,9 +15,12 @@ const AlbumForm = () => {
   } = useForm();
   const { t } = useTranslation();
   const dispatch = useDispatch();
+  const notify = (name) =>
+    toast(t("addAlbumForm.addedSuccessfully", { name }), { type: "success" });
 
   const onSubmit = ({ name }) => {
     dispatch(addAlbum(name));
+    notify(name);
     reset();
   };
 

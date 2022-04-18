@@ -4,7 +4,8 @@
     "addAlbum": "Dodaj album",
     "requiredError": "Pole jest wymagane!",
     "minLengthError": "Nazwa albumu powinna zawierać przynajmniej 2 znaki!",
-    "maxLengthError": "Nazwa albumu powinna zawierać maksymalnie 2 znaki!"
+    "maxLengthError": "Nazwa albumu powinna zawierać maksymalnie 2 znaki!",
+    "addedSuccessfully": "Album {{name}} został pomyślnie dodany!"
   },
   "sort": {
     "sort": "Sortuj",
@@ -13,6 +14,14 @@
     "createdAt": "Data dodania"
   },
   "list": {
-    "viewType": "Rodzaj wyświetlania"
+    "viewType": "Typ wyświetlania",
+    "setAsFavorite": "Ustaw jako najlepsze z najlepszych",
+    "removeFromFavorite": "Usuń z najlepszych",
+    "areYouSure": "Czy jesteś pewny?",
+    "deleteConfirmation": "Potwierdź, że chcesz usunąć album o nazwie <0>\"{{name}}\"</0>",
+    "delete": "Usuń",
+    "cancel": "Anuluj",
+    "emptyList": "Twoja lista albumów jest pusta",
+    "createdAt": "Dodane: {{val, datetime}}"
   }
 }
