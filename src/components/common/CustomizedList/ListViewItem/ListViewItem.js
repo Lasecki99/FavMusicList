@@ -29,7 +29,7 @@ const ListViewItem = ({ item, onFavoriteChange, setItemToDelete }) => {
           formatParams: {
             val: {
               year: "numeric",
-              month: "numeric",
+              month: "long",
               day: "numeric",
               hour: "numeric",
               minute: "numeric",
