@@ -8,6 +8,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { useTheme } from "@emotion/react";
 
 import HideOnScroll from "../../common/HideOnScroll/HideOnScroll";
@@ -59,6 +60,12 @@ const Layout = ({ children, drawerContent }) => {
           },
         }}
       >
+        <IconButton
+          onClick={() => setNavbarOpen(false)}
+          sx={{ width: 50, marginLeft: "auto", padding: "1rem" }}
+        >
+          <CloseIcon fontSize="large" />
+        </IconButton>
         <Toolbar />
         <div
           style={{
